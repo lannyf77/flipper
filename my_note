@@ -1,0 +1,27 @@
+https://github.com/facebook/flipper#building-from-source
+
+https://stackoverflow.com/questions/61182996/flipper-cannot-be-opened-because-the-developer-cannot-be-verified-in-macos-catal
+
+An alternative is to either run or build from source.
+Helpful if you're on a work computer with tighter application security settings.
+
+Prerequisites:
+
+NodeJS (https://nodejs.org/en/)
+Yarn (https://yarnpkg.com)
+Running from source
+
+git clone https://github.com/facebook/flipper.git
+cd flipper/desktop
+yarn
+yarn start
+Building from source
+
+yarn build --mac --version $buildNumber
+For Building from source, you should do it in the following steps:
+
+git clone https://github.com/facebook/flipper.git
+cd flipper/desktop
+yarn
+yarn build --mac --version $buildNumber
+Note: I've noticed building from source as of Aug 2020 0.53.0 has some issues for me, so would recommend running from source if you need to use this.
